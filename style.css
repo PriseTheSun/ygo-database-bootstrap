@@ -1,0 +1,39 @@
+#cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 50px;
+}
+img{
+  max-width: 100%;
+}
+#pagination{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  gap: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+
+.title-archetype{
+  display: flex;
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+
+@media(max-width: 1440px){
+    #cards{
+        grid-template-columns: 1fr 1fr;
+
+      }
+}
+@media(max-width: 1024px){
+    #cards{
+        grid-template-columns: 1fr;
+
+      }
+}
